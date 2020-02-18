@@ -6,3 +6,4 @@
 # object files
 cbmbasic
 *.o
+utest

@@ -2,6 +2,10 @@
 #define state_t void
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 extern state_t *initAndResetChip();
 extern void destroyChip(state_t *state);
 extern void step(state_t *state);
@@ -21,3 +25,7 @@ extern unsigned char readIR(state_t *state);
 extern unsigned char memory[65536];
 extern unsigned int cycle;
 extern unsigned int transistors;
+
+#ifdef __cplusplus
+}
+#endif

@@ -13,7 +13,7 @@
 
 enum {
 //	D1x1 = 827,
-	a0 = 737,
+	a0 = 737,		// accumulator
 	a1 = 1234,
 	a2 = 978,
 	a3 = 162,
@@ -21,7 +21,7 @@ enum {
 	a5 = 858,
 	a6 = 1136,
 	a7 = 1653,
-	ab0 = 268,
+	ab0 = 268,		// address bus
 	ab1 = 451,
 	ab2 = 1340,
 	ab3 = 211,
@@ -53,14 +53,14 @@ enum {
 //	adl5 = 1630,
 //	adl6 = 121,
 //	adl7 = 1299,
-//	alu0 = 394,
-//	alu1 = 697,
-//	alu2 = 276,
-//	alu3 = 495,
-//	alu4 = 1490,
-//	alu5 = 893,
-//	alu6 = 68,
-//	alu7 = 1123,
+	alu0 = 394,
+	alu1 = 697,
+	alu2 = 276,
+	alu3 = 495,
+	alu4 = 1490,
+	alu5 = 893,
+	alu6 = 68,
+	alu7 = 1123,
 //	cclk = 943,   // aka cp2
 //	clearIR = 1077,
 	clk0 = 1171,
@@ -69,7 +69,7 @@ enum {
 //	clock1 = 156,
 //	clock2 = 1536,
 //	cp1 = 710,
-	db0 = 1005,
+	db0 = 1005,		// data bus
 	db1 = 82,
 	db2 = 945,
 	db3 = 650,
@@ -106,7 +106,15 @@ enum {
 	irq = 103,
 	nmi = 1297,
 //	notRdy0 = 248,
-	notir0 = 194,
+	ir0 = 328,		// Instruction register - what is currently being decoded
+	ir1 = 1626,
+	ir2 = 1384,
+	ir3 = 1576,
+	ir4 = 1112,
+	ir5 = 1329,
+	ir6 = 337,
+	ir7 = 1328,
+	notir0 = 194,	// NOT Instruction register - what is currently being decoded
 	notir1 = 702,
 	notir2 = 1182,
 	notir3 = 1125,
@@ -122,7 +130,7 @@ enum {
 //	nots5 = 601,
 //	nots6 = 1029,
 //	nots7 = 181,
-	p0 = 687,
+	p0 = 687,		// status register ???
 	p1 = 1444,
 	p2 = 1421,
 	p3 = 439,
@@ -130,7 +138,7 @@ enum {
 	p5 = 0,
 	p6 = 77,
 	p7 = 1370,
-	pch0 = 1670,
+	pch0 = 1670,	// program counter
 	pch1 = 292,
 	pch2 = 502,
 	pch3 = 584,
@@ -157,7 +165,7 @@ enum {
 	rdy = 89,
 	res = 159,
 	rw = 1156,
-	s0 = 1403,
+	s0 = 1403,	
 	s1 = 183,
 	s2 = 81,
 	s3 = 1532,
@@ -181,7 +189,7 @@ enum {
 //	t5 = 909,
 	vcc = 657,
 	vss = 558,
-	x0 = 1216,
+	x0 = 1216,		// x register
 	x1 = 98,
 	x2 = 1,
 	x3 = 1648,
@@ -189,7 +197,7 @@ enum {
 	x5 = 589,
 	x6 = 448,
 	x7 = 777,
-	y0 = 64,
+	y0 = 64,		// y register
 	y1 = 1148,
 	y2 = 573,
 	y3 = 305,
